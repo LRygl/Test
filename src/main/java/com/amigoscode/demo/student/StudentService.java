@@ -46,4 +46,8 @@ public class StudentService {
         //TODO: Confirm created user and show notification to client
 
     }
+
+    List<StudentCourse> getAllCoursesForStudent(UUID studentId){
+        return studentDataAccessService.selectAllStudentCourses(studentId);
+    }
 }
