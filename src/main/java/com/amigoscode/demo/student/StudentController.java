@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("students")
+@RequestMapping("api/students")
 public class StudentController {
 
     private final  StudentService studentService;
@@ -29,7 +29,7 @@ public class StudentController {
 
     //localhost:8080/api/courses
     //Return All existing courses
-    @GetMapping
+    @GetMapping(path="api/courses")
     public List<Course> getAllCourses() {
         return null;
     }
