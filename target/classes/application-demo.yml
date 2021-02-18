@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: @spring.profiles.active@
+    active: demo
 
 server:
   port: 5000
