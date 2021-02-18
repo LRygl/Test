@@ -27,12 +27,6 @@ public class StudentController {
         return studentService.getAllStudents();
     }
 
-    //localhost:8080/api/courses
-    //Return All existing courses
-    @GetMapping(path="api/courses")
-    public List<Course> getAllCourses() {
-        return null;
-    }
 
     // UUID student id is what i am getting back from client
     // Path is string that is expected to be found in the request
@@ -42,13 +36,6 @@ public class StudentController {
         // TODO Finish this part
         // System.out.println(studentId);
         return studentService.getAllCoursesForStudent(studentId);
-    }
-
-
-    //TODO Create Student detail Page
-    @GetMapping(path="api/{studentId}")
-    public List<Student> getStudentDetail(@PathVariable("studentId") UUID studentId){
-        return null;
     }
 
     @PostMapping
