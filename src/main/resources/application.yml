@@ -5,7 +5,10 @@ server:
 app:
   datasource:
     jdbc-url: jdbc:postgresql://localhost:5432/amigoscodedemo
+#    jdbc-url: jdbc:postgresql://fullstackspringbootdb.cpib7pvrik8j.eu-central-1.rds.amazonaws.com:5432/amigoscodedemo
     username: postgres
+#    password: sphingalama33
+#    username: lordxray
     password: sphingalama33
     pool-size: 30
 logging:
